@@ -1,0 +1,17 @@
+{
+  "name": "NoStress-client",
+  "namelower": "nostres-client",
+  "version": "0.0.1",
+  "description": "NoStress-Client",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.example.com:example.git"
+  },  
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },  
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}
