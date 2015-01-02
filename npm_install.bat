@@ -1,1 +1,2 @@
+cd ./source
 npm install
