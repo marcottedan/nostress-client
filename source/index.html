@@ -2,15 +2,34 @@
 <html lang="en" ng-app>
 <head>
   <meta charset="utf-8">
-  <title>My HTML File</title>
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <title>NoStress</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="../bower_components/angular/angular.js"></script>
-  <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+
+  <script src="node_modules/socket.io-client/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+
 </head>
 <body>
 
   <p>Nothing here {{'yet' + '!'}}</p>
+
+  <h1>Netty-socketio Demo Chat</h1>
+
+  <br/>
+
+  <div id="console" class="well">
+  </div>
+
+  <form class="well form-inline" onsubmit="return false;">
+    <input id="msg" class="input-xlarge" type="text" placeholder="Type something..."/>
+    <button type="button" onClick="sendMessage()" class="btn">Send</button>
+    <button type="button" onClick="sendDisconnect()" class="btn">Disconnect</button>
+  </form>
 
 </body>
 </html>
